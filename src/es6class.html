@@ -1,0 +1,149 @@
+<html>
+<body>
+<!-- <button id="btn">Click Me!</button> -->
+<p id="demo"></p>
+<script>
+//normal class in es6
+// class Car {
+//   constructor(name) {
+//     this.brand = name;
+//   }
+//   present() {
+//     return 'I have a ' + this.brand;
+//   }
+// }
+// const mycar = new Car("Ford");
+// document.write(mycar.present());
+
+//Inheritance
+// class Car {
+//   constructor(name) {
+//     this.brand = name;
+//   }
+
+//   present() {
+//     return 'I have a ' + this.brand;
+//   }
+// }
+// class Model extends Car {
+//   constructor(name, mod) {
+//     super(name);
+//     this.model = mod;
+//   }  
+//   show() {
+//       return this.present() + ', it is a ' + this.model
+//   }
+// }
+// const mycar = new Model("Ford", "Mustang");
+// document.write(mycar.show());
+
+//without arrow function
+// Scope = function() {
+//   return "without arrow function";
+// }
+// document.write(Scope())
+
+//with arrow function
+// Scope = () => {
+//   return " with arrow function";
+// }
+// document.write(Scope())
+
+//without return statement in one statement
+// Scope = () => "Without Return statement";
+// document.write(Scope())
+
+//with parametes arrow fn
+// Scope = (val) => "Hello " + val;
+// document.write(Scope ("Scope India"))
+
+//regular fn this binding
+// class Header {
+//   constructor() {
+//     this.name = "Scope";
+//   }
+
+//   changeColor = function() {
+//     document.getElementById("demo").innerHTML += this;
+//   }
+// }
+
+// const myheader = new Header();
+
+// //The window object calls the function:
+// window.addEventListener("load", myheader.changeColor);
+
+// //A button object calls the function:
+// document.getElementById("btn").addEventListener("click", myheader.changeColor);
+
+//arrow fn without this binding
+// class Header {
+//   constructor() {
+//     this.color = "Red";
+//   }
+
+//   changeColor = () => {
+//     document.getElementById("demo").innerHTML += this;
+//   }
+// }
+
+// const myheader = new Header();
+
+// //The window object calls the function:
+// window.addEventListener("load", myheader.changeColor);
+
+// //A button object calls the function:
+// document.getElementById("btn").addEventListener("click", myheader.changeColor);
+
+//destruction example
+// function calculate(a, b) {
+//   const add = a + b;
+//   const subtract = a - b;
+//   const multiply = a * b;
+//   const divide = a / b;
+
+//   return [add, subtract, multiply, divide];
+// }
+
+// const [add, subtract, multiply, divide] = calculate(1,2);
+
+// document.write("<p>Sum: " + add + "</p>");
+// document.write("<p>Difference " + subtract + "</p>");
+// document.write("<p>Product: " + multiply + "</p>");
+// document.write("<p>Quotient " + divide + "</p>");
+
+//without destruction example2
+// const vehicleOne = {
+//   brand: 'Ford',
+//   model: 'Mustang',
+//   type: 'car',
+//   year: 2021, 
+//   color: 'red'
+// }
+
+// myVehicle(vehicleOne);
+
+// // old way
+// function myVehicle(vehicle) {
+//   const message = 'My ' + vehicle.type + ' is a ' + vehicle.color + ' ' + vehicle.brand + ' ' + vehicle.model + '.';
+//   document.getElementById("demo").innerHTML = message;
+// }
+
+//with destruction example2
+// const vehicleOne = {
+//   brand: 'Ford',
+//   model: 'Mustang',
+//   type: 'car',
+//   year: 2021, 
+//   color: 'red'
+// }
+
+// myVehicle(vehicleOne);
+
+// function myVehicle({type, color, brand, model}) {
+//   const message = 'My ' + type + ' is a ' + color + ' ' + brand + ' ' + model + '.';
+//   document.getElementById("demo").innerHTML = message;
+// }
+</script>
+</body>
+</html>

@@ -2,16 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App1 from './classbasedapp';
+import FnApp from './functionbasedapp';
+import ConditionalRendering from './ConditionalRendering';
+import Formpage from './form';
+import CounterApp from './CounterApp';
+import Contextmain from './useContext/main';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* function based app page */}
+    {/* <FnApp text="Function based app"/> */}
+    {/* <App/> */}
+    {/* class based app page */}
+    {/* <App1 text="class based app"/> */}
+    {/* <ConditionalRendering isAdmin={true} /> */}
+    {/* <Formpage /> */}
+    {/* <CounterApp /> */}
+    
+    {/* useContext */}
+    <Contextmain />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
