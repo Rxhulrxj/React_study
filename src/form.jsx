@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Formpage() {
+function Formpage(props) {
     const [name,setName] = useState("")
     const handleChange = (e) => {
         e.preventDefault();
